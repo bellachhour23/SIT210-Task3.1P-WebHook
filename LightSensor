@@ -1,16 +1,16 @@
 //light sensor code
+
 int led = A5;
 int lightSensor = A0;
 int analogValue;
 
-void setup() {
-
+void setup() 
+{
     pinMode(led, OUTPUT);
-
 }
 
-void loop() {
-    
+void loop() 
+{
     digitalWrite(led, HIGH);
     
     String light = String(analogRead (lightSensor));
@@ -19,5 +19,4 @@ void loop() {
     
     digitalWrite(led, LOW);
     delay(30000);
-
 }
